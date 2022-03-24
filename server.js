@@ -1,17 +1,16 @@
-var express = require("express")
-var port = process.env.PORT | 3000
+const express = require('express');
+const app = express();
 
-app = express()
+app.get('/', (req, res) => {
+    res
+        .status(200)
+        .send('Hello server is running')
+        .end();
+});
 
-
-app.get("/", function (req, res) {
-    res.send("root")
-})
-
-app.get("/blabla", function (req, res) {
-    res.send("Hello World")
-})
-
-app.listen(port, () => {
-    console.log(`Live Backend app listening on port ${port}`)
-})
+// Start the server
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}`);
+    console.log('Press Ctrl+C to quit.');
+});
