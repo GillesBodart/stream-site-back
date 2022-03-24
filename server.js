@@ -12,6 +12,6 @@ app.get("/blabla", function (req, res) {
     res.send("Hello World")
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Live Backend app listening on port ${port}`)
 })
