@@ -1,11 +1,25 @@
 const express = require('express');
+const cors = require('cors');
+
+
 const app = express();
 
-app.get('/', function(req, res) {
+
+app.use(cors())
+
+
+app.get('/', (req, res) => {
     res
-
+        .status(200)
         .send('Hello server is running')
+        .end();
+});
 
+app.get('/users/me', (req, res) => {
+    res
+        .status(200)
+        .json({username:"Gilles"})
+        .end();
 });
 
 // Start the server
