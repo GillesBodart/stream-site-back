@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', function(req, res) {
     res
-       // .status(200)
+        .status(200)
         .send('Hello server is running')
         .end();
 });
