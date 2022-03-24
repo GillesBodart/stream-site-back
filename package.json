@@ -1,0 +1,24 @@
+{
+  "name": "site-back",
+  "version": "1.0.0",
+  "description": "backend live",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GillesBodart/stream-site-back.git"
+  },
+  "author": "Gilles The Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GillesBodart/stream-site-back/issues"
+  },
+  "homepage": "https://github.com/GillesBodart/stream-site-back#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "passport": "^0.5.2"
+  }
+}
