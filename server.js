@@ -3,9 +3,9 @@ const app = express();
 
 app.get('/', function(req, res) {
     res
-        .status(200)
+
         .send('Hello server is running')
-        .end();
+
 });
 
 // Start the server
